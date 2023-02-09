@@ -86,7 +86,7 @@ app.delete('/api/notes/:id', (req, res) => {
         (writeErr) =>
           writeErr
             ? console.error(writeErr)
-            : console.info('Successfully added note.')
+            : console.info('Successfully removed note.')
       );
 
        res.json(newArr)
